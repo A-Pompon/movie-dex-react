@@ -1,0 +1,83 @@
+.navBar__container {
+    background: rgba(0, 0, 0, 0.3);
+    width: max-content;
+    padding: 0.7rem 1.7rem;
+    z-index: 2;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2rem;
+    display: flex;
+    gap: 0.8rem;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+  }
+  
+  .navBar__container a {
+    background: transparent;
+    padding: 0.9rem;
+    border-radius: 50%;
+    display: flex;
+    color: $color-3;
+    font-size: 1.1rem;
+  }
+  
+  .navBar__container a:hover {
+    background: rgba(0, 0, 0, 0.3);
+  }
+  
+  .navBar__container a.active {
+    background: $color-2;
+    color: $white;
+  }
+  
+  /* ===== MEDIA QUERIES (SMALL DEVICES) ===== */
+  
+  @media screen and (max-width: 600px) {
+    .navBar__container {
+      width: max-content;
+      margin-bottom: 0.9rem;
+    }
+  
+    .navBar__container a {
+      font-size: 1.1rem;
+    }
+  }
+  
+  /* ===== MEDIA QUERIES (VERY SMALL DEVICES) ===== */
+  
+  @media screen and (max-width: 415px) {
+    .navBar__container {
+      gap: 0.3rem;
+      margin-bottom: 0.7rem;
+    }
+  
+    .navBar__container a {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* ===== MEDIA QUERIES (VERY SMALL DEVICES) ===== */
+  
+  @media screen and (max-width: 350px) {
+    .navBar__container {
+      margin-bottom: 0.5rem;
+    }
+  
+    .navBar__container a {
+      font-size: 0.8rem;
+    }
+  }
+  
+  /* ===== MEDIA QUERIES (VERY SMALL DEVICES) ===== */
+  
+  @media screen and (max-width: 300px) {
+    .navBar__container {
+      margin-bottom: 0rem;
+    }
+  
+    .navBar__container a {
+      font-size: 0.6rem;
+    }
+  }
+  
